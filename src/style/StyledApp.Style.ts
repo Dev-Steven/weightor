@@ -4,6 +4,8 @@ export const StyledApp = styled.div`
 	color: ${props => props.theme.fontColor};
 	background-color: ${props => props.theme.body};
 	border-radius: 5px;
+	width: 210px;
+	padding: 10px;
 `;
 
 export const StyledHeader = styled.div`

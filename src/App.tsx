@@ -58,17 +58,21 @@ export const App: React.FC<{
 					<StyledScroll>
 						Total: {totalWeight}
 						{weightsUsed.map((w, index) => (
-							<p key={index}>{w}</p>
+							<p key={index}>
+								{w} <button>x</button>
+							</p>
 						))}
 					</StyledScroll>
 				</StyledDisplay>
 				<StyledWeights>
 					{weights.map((w, index) => (
-						<Button
-							key={index}
-							title={w}
-							changeWeight={() => addWeight(w)}
-						/>
+						<div>
+							<Button
+								key={index}
+								title={w}
+								changeWeight={() => addWeight(w)}
+							/>
+						</div>
 					))}
 				</StyledWeights>
 				<StyledWeights>
